@@ -1,167 +1,28 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+<!--
+
+  THIS FILE HAS BEEN MODIFIED FROM ORIGINAL BY: Miro Holopainen, 2018-01-04
+
+-->
+
+<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9170A04C-8D4B-47A7-A6E3-7FC0F24244DD}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ExpressMapper.Tests.Model</RootNamespace>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>ExpressMapper.Tests.Model</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
+    <PackageId>ExpressMapper.Tests.Model</PackageId>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
+
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
+    <PackageReference Include="System.Linq.Queryable" Version="4.3.0" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Enums\AnotherStates.cs" />
-    <Compile Include="Enums\GenderTypes.cs" />
-    <Compile Include="Enums\States.cs" />
-    <Compile Include="Generator\Complex.cs" />
-    <Compile Include="Generator\Functional.cs" />
-    <Compile Include="Generator\Simple.cs" />
-    <Compile Include="Models\Address.cs" />
-    <Compile Include="Models\BaseControl.cs" />
-    <Compile Include="Models\Booking.cs" />
-    <Compile Include="Models\Brand.cs" />
-    <Compile Include="Models\CategoryTrip.cs" />
-    <Compile Include="Models\City.cs" />
-    <Compile Include="Models\ComboBox.cs" />
-    <Compile Include="Models\Composition.cs" />
-    <Compile Include="Models\Contact.cs" />
-    <Compile Include="Models\Country.cs" />
-    <Compile Include="Models\Cylinder.cs" />
-    <Compile Include="Models\Employee.cs" />
-    <Compile Include="Models\Engine.cs" />
-    <Compile Include="Models\FashionProduct.cs" />
-    <Compile Include="Models\FatherLowerCase.cs" />
-    <Compile Include="Models\Father.cs" />
-    <Compile Include="Models\FatherSons.cs" />
-    <Compile Include="Models\FlattenCircularReference.cs" />
-    <Compile Include="Models\Gift.cs" />
-    <Compile Include="Models\Grandson.cs" />
-    <Compile Include="Models\Gui.cs" />
-    <Compile Include="Models\ItemModel.cs" />
-    <Compile Include="Models\Source.cs" />
-    <Compile Include="Models\TestDefaultDecimal.cs" />
-    <Compile Include="Models\TextBox.cs" />
-    <Compile Include="Models\UserInterface.cs" />
-    <Compile Include="ViewModels\BaseControlViewModel.cs" />
-    <Compile Include="ViewModels\ComboBoxViewModel.cs" />
-    <Compile Include="ViewModels\FlattenCircularReferenceDto.cs" />
-    <Compile Include="ViewModels\FlattenFatherSonDtoForGrandsonDto.cs" />
-    <Compile Include="ViewModels\FlattenFatherSonGrandsonLowerCaseDto.cs" />
-    <Compile Include="ViewModels\FlattenFatherSonsCountBadDto.cs" />
-    <Compile Include="ViewModels\FlattenFatherSonsCountDto.cs" />
-    <Compile Include="ViewModels\FlattenLinqCollectionMethodsDto.cs" />
-    <Compile Include="Models\Mail.cs" />
-    <Compile Include="Models\NonGenericCollectionImplementingIEnumerable.cs" />
-    <Compile Include="Models\NonGenericCollectionInhertedFromList.cs" />
-    <Compile Include="Models\Organization.cs" />
-    <Compile Include="Models\Person.cs" />
-    <Compile Include="Models\Product.cs" />
-    <Compile Include="Models\ProductOption.cs" />
-    <Compile Include="Models\Size.cs" />
-    <Compile Include="Models\Son.cs" />
-    <Compile Include="Models\SpecialPerson.cs" />
-    <Compile Include="Models\Structs\Feature.cs" />
-    <Compile Include="Models\Structs\Item.cs" />
-    <Compile Include="Models\SubItem.cs" />
-    <Compile Include="Models\SubUnit.cs" />
-    <Compile Include="Models\Supplier.cs" />
-    <Compile Include="Models\Table.cs" />
-    <Compile Include="Models\TestCollection.cs" />
-    <Compile Include="Models\TestItem.cs" />
-    <Compile Include="Models\TestModel.cs" />
-    <Compile Include="Models\Ticket.cs" />
-    <Compile Include="Models\Trip.cs" />
-    <Compile Include="Models\TripCatalog.cs" />
-    <Compile Include="Models\TypoCase.cs" />
-    <Compile Include="Models\Unit.cs" />
-    <Compile Include="Models\UnitOfWork.cs" />
-    <Compile Include="Models\Venue.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Models\SpecialGift.cs" />
-    <Compile Include="ViewModels\AddressViewModel.cs" />
-    <Compile Include="ViewModels\BookingViewModel.cs" />
-    <Compile Include="ViewModels\BrandViewModel.cs" />
-    <Compile Include="ViewModels\CategoryTripViewModel.cs" />
-    <Compile Include="ViewModels\CityViewModel.cs" />
-    <Compile Include="ViewModels\CompositionViewModel.cs" />
-    <Compile Include="ViewModels\ContactViewModel.cs" />
-    <Compile Include="ViewModels\CountryViewModel.cs" />
-    <Compile Include="ViewModels\CylinderViewModel.cs" />
-    <Compile Include="ViewModels\EmployeeViewModel.cs" />
-    <Compile Include="ViewModels\EngineViewModel.cs" />
-    <Compile Include="ViewModels\FashionProductViewModel.cs" />
-    <Compile Include="ViewModels\FlattenFatherSonGrandsonDto.cs" />
-    <Compile Include="ViewModels\FlattenSimpleClass.cs" />
-    <Compile Include="ViewModels\GiftViewModel.cs" />
-    <Compile Include="ViewModels\GuiViewModel.cs" />
-    <Compile Include="ViewModels\ItemModelViewModel.cs" />
-    <Compile Include="ViewModels\MailViewModel.cs" />
-    <Compile Include="ViewModels\OrganizationViewModel.cs" />
-    <Compile Include="ViewModels\PersonViewModel.cs" />
-    <Compile Include="ViewModels\ProductOptionViewModel.cs" />
-    <Compile Include="ViewModels\ProductViewModel.cs" />
-    <Compile Include="ViewModels\SizeViewModel.cs" />
-    <Compile Include="ViewModels\SpecialGiftViewModel.cs" />
-    <Compile Include="ViewModels\SpecialPersonViewModel.cs" />
-    <Compile Include="ViewModels\Structs\FeatureViewModel.cs" />
-    <Compile Include="ViewModels\Structs\ItemViewModel.cs" />
-    <Compile Include="ViewModels\SubItemViewModel.cs" />
-    <Compile Include="ViewModels\SubUnitViewModel.cs" />
-    <Compile Include="ViewModels\SupplierViewModel.cs" />
-    <Compile Include="ViewModels\TableViewModel.cs" />
-    <Compile Include="ViewModels\TargetViewModel.cs" />
-    <Compile Include="ViewModels\TestCollectionViewModel.cs" />
-    <Compile Include="ViewModels\TestDefaultDecimalToStringViewModel.cs" />
-    <Compile Include="ViewModels\TestItemViewModel.cs" />
-    <Compile Include="ViewModels\TestViewModel.cs" />
-    <Compile Include="Models\TripType.cs" />
-    <Compile Include="ViewModels\TextBoxViewModel.cs" />
-    <Compile Include="ViewModels\TicketViewModel.cs" />
-    <Compile Include="ViewModels\TripCatalogViewModel.cs" />
-    <Compile Include="ViewModels\TripTypeViewModel.cs" />
-    <Compile Include="ViewModels\TripViewModel.cs" />
-    <Compile Include="ViewModels\TypoCaseViewModel.cs" />
-    <Compile Include="ViewModels\UnitOfWorkViewModel.cs" />
-    <Compile Include="ViewModels\UnitViewModel.cs" />
-    <Compile Include="ViewModels\UserInterfaceViewModel.cs" />
-    <Compile Include="ViewModels\VenueViewModel.cs" />
+
+  <!--
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.6' ">
+    <PackageReference Include="System.Linq.Queryable" Version="4.0.1" />
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
   -->
+
 </Project>

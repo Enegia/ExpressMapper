@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HolopaMir.ExpressMapper", "HolopaMir.ExpressMapper\HolopaMir.ExpressMapper.csproj", "{1305B6AF-9375-42DD-BB71-77924F49452E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressMapper.Tests.Model", "ExpressMapper.Tests.Model\ExpressMapper.Tests.Model.csproj", "{43A5C4B7-5CF9-4928-BD91-6B83F975F184}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressMapper.Tests", "ExpressMapper.Tests\ExpressMapper.Tests.csproj", "{1FE642B5-E60F-4FD8-B929-3B2EAE23E67B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1305B6AF-9375-42DD-BB71-77924F49452E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1305B6AF-9375-42DD-BB71-77924F49452E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1305B6AF-9375-42DD-BB71-77924F49452E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1305B6AF-9375-42DD-BB71-77924F49452E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43A5C4B7-5CF9-4928-BD91-6B83F975F184}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43A5C4B7-5CF9-4928-BD91-6B83F975F184}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43A5C4B7-5CF9-4928-BD91-6B83F975F184}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43A5C4B7-5CF9-4928-BD91-6B83F975F184}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FE642B5-E60F-4FD8-B929-3B2EAE23E67B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FE642B5-E60F-4FD8-B929-3B2EAE23E67B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FE642B5-E60F-4FD8-B929-3B2EAE23E67B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FE642B5-E60F-4FD8-B929-3B2EAE23E67B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C93A2AFB-3CB8-4B4B-A9EC-28A3858BE061}
+	EndGlobalSection
+EndGlobal
