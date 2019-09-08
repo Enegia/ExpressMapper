@@ -1,22 +1,22 @@
-<!--
+﻿<!--
 
-  THIS FILE HAS BEEN MODIFIED FROM ORIGINAL BY: Miro Holopainen, 2018-01-04
+  THIS FILE HAS BEEN MODIFIED FROM ORIGINAL BY: Miro Holopainen, 2019-09-08
 
 -->
 
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
     <AssemblyName>ExpressMapper.Tests</AssemblyName>
     <OutputType>Exe</OutputType>
     <PackageId>ExpressMapper.Tests</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FluentAssertions" Version="4.19.4" />
-    <PackageReference Include="NUnit" Version="3.9.0" />
-    <PackageReference Include="NUnitLite" Version="3.9.0" />
+    <PackageReference Include="FluentAssertions" Version="5.9.0" />
+    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="NUnitLite" Version="3.12.0" />
     <PackageReference Include="System.Threading.Tasks.Parallel" Version="4.3.0" />
   </ItemGroup>
 
