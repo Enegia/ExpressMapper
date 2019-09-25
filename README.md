@@ -1,4 +1,4 @@
-THIS IS FORKED VERSION FROM THE ORIGINAL. This fork works with netstandard1.6 and netstandard2.0. As such, i will not provide any support or actively develop this.
+THIS IS FORKED VERSION FROM THE ORIGINAL. This fork works with netstandard1.6, netstandard2.0, netstandard2.1. As such, i will not provide any support or actively develop this.
 
 ORIGINAL DESCRIPTION:
 
