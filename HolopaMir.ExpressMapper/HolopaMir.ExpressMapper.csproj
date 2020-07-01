@@ -1,14 +1,14 @@
 ﻿<!--
 
-  THIS FILE HAS BEEN MODIFIED FROM ORIGINAL BY: Miro Holopainen, 2019-09-25
+  THIS FILE HAS BEEN MODIFIED FROM ORIGINAL BY: Miro Holopainen, 2020-07-01
 
 -->
 
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.1;netstandard2.0;netstandard1.6</TargetFrameworks>
-    <Version>2.0.0</Version>
+    <TargetFrameworks>net5.0;netstandard2.1;netstandard2.0;netstandard1.6</TargetFrameworks>
+    <Version>3.0.0-preview1</Version>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <IsPackable>true</IsPackable>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -16,7 +16,7 @@
     <Authors>Miro Holopainen</Authors>
     <Company />
     <Product>ExpressMapper</Product>
-    <Description>THIS IS FORK OF EXPRESSMAPPER, so it will work exactly with &gt;= netstandard1.6.
+    <Description>THIS IS FORK OF EXPRESSMAPPER, so it will work exactly with &gt;= netstandard1.6 and net5.0 (preview).
 
 Original source: https://github.com/fluentsprings/ExpressMapper
 Forked source: https://github.com/Enegia/ExpressMapper</Description>
@@ -24,7 +24,7 @@ Forked source: https://github.com/Enegia/ExpressMapper</Description>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.CSharp" Version="4.6.0" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
     <PackageReference Include="System.Linq.Queryable" Version="4.3.0" />
   </ItemGroup>
 
