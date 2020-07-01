@@ -1,13 +1,13 @@
 <!--
 
-  THIS FILE HAS BEEN MODIFIED FROM ORIGINAL BY: Miro Holopainen, 2018-01-04
+  THIS FILE HAS BEEN MODIFIED FROM ORIGINAL BY: Miro Holopainen, 2020-07-01
 
 -->
 
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
     <AssemblyName>ExpressMapper.Tests.Model</AssemblyName>
     <PackageId>ExpressMapper.Tests.Model</PackageId>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
@@ -18,11 +18,5 @@
   <ItemGroup>
     <PackageReference Include="System.Linq.Queryable" Version="4.3.0" />
   </ItemGroup>
-
-  <!--
-  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.6' ">
-    <PackageReference Include="System.Linq.Queryable" Version="4.0.1" />
-  </ItemGroup>
-  -->
 
 </Project>
